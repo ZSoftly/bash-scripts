@@ -1,16 +1,16 @@
-# BOUT THIS README
+## BOUT THIS README
 
 This README file contains the blueprints for all the changes made to this repository and who made the changes. 
 
 ---
-# ABOUT SSH KEYS
+## ABOUT SSH KEYS
 ---
 Owners: Goode & Cyprian
 Reviewers: Ditah & Clinton
 Dateline: Saturday, Oct 08, 2022 23:59 EST
 
 ---
-# ABOUT PERMISSIONS
+## ABOUT PERMISSIONS
 ---
 * Owners: Clinton
 * Reviewers: Fotso and Ditah
