@@ -50,7 +50,7 @@ then
                 fi
 else
         read -p "Enter Email: " email
-        ssh-keygen -t rsa -b 4096 -C $email
+        ssh-keygen -t rsa -b 4096 -C "$email"
         cat ~/.ssh/id_rsa.pub || cat /$HOME/.ssh/id_ed25519.pub
 fi
 ```
