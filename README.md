@@ -5,10 +5,15 @@ This README file contains the blueprints for all the changes made to this reposi
 ---
 ## ABOUT SSH KEYS
 ---
-Owners: Goode & Cyprian
-Reviewers: Ditah & Clinton
-Dateline: Saturday, Oct 08, 2022 23:59 EST
+* Owners: Goode & Cyprian
+* Reviewers: Ditah & Clinton
+* Dateline: Saturday, Oct 08, 2022 23:59 EST
 
+CYPRIAN:
+   - I have created a file "ssh-key-gen.md" 
+   - The file is a documentory on how to generate ssh-keys and add it to GitHub
+   - It also contains a simplen bash script that can be run to generate ssh-keys
+   
 ---
 ## ABOUT PERMISSIONS
 ---
