@@ -29,7 +29,7 @@ Copy your ssh-key and go to GitHub and add your public keys:
       Put in your password and take enter.
 
 A simple bash sccript to generate ssh-key:
-
+```
 #!/bin/bash
 
 # Check if the user already has ssh keys
@@ -45,11 +45,12 @@ then
                 then
                         rm -rf ~/.ssh
                 else [[ $key -eq 2 ]]
-                        cat ~/.ssh/id_rsa.pub
+                        cat ~/.ssh/id_rsa.pub || cat /$HOME/.ssh/id_ed25519.pub
                         break
                 fi
 else
         read -p "Enter Email: " email
         ssh-keygen -t rsa -b 4096 -C $email
-        cat ~/.ssh/id_rsa.pub
+        cat ~/.ssh/id_rsa.pub || cat /$HOME/.ssh/id_ed25519.pub
 fi
+```
