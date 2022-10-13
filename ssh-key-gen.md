@@ -72,6 +72,6 @@
 - These steps are optional, but please do them if prompted
   - You maybe prompt to enter your password
   - Enter your password and take enter
-
+  - 
 ##### A simple bash sccript to generate ssh-key:
 - Navigate to ../scripts/ssh-key-gen.sh
