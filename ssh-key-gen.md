@@ -61,18 +61,19 @@
   ```
   ***
 
-  Copy your ssh-key and go to GitHub and add your public keys:
-  # On your Github, do the following
-    ** navigate to your profile
-    ** click on settings
-    ** navigate to ssh-keys
-    ** take new ssh-keys
-    ** give a unique name to the ssh key and paste the public key in the required folder.
-    ** save it, 
-        You maybe prompt to enter your password
-        Put in your password and take enter.
+##### Copy your ssh-key and go to GitHub and add your public keys:
+##### On your Github, do the following
+- Navigate to your profile icon on the top right
+- Click on settings
+- Navigate to SSH and GPG Keys (the controls on the left)
+-  Click on new ssh-keys
+- Give a unique name to the ssh key and paste the public key in the required location inside the key box
+- Clock on save it 
+- These steps are optional, but please do them if prompted
+  - You maybe prompt to enter your password
+  - Enter your password and take enter
 
-  A simple bash sccript to generate ssh-key:
+##### A simple bash sccript to generate ssh-key:
   ```
 #!/bin/bash
 
