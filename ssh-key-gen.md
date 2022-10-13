@@ -74,4 +74,4 @@
   - Enter your password and take enter
 
 ##### A simple bash sccript to generate ssh-key:
-- Navigate to ./scripts/ssh-key-gen.sh
+- Navigate to ../scripts/ssh-key-gen.sh
