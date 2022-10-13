@@ -27,6 +27,10 @@
   ```
   ##### If the output of the command is similar to this, it means you have ssh keys
   ***
+  RSA ![rsa-ssh-keys](https://user-images.githubusercontent.com/101201113/195610507-62e196bf-41f8-4e76-aac0-1ffd116c334e.png)
+
+
+  ECDSA ![ecdsa-ssh-key](https://user-images.githubusercontent.com/101201113/195609492-7b94dda8-b26c-4d41-a042-7419a8553925.png)
 
   ***  
   ##### To generate  ssh keys, choose the appropriate encryption algorithm (RSA or ECDSA) and run the appropriate command command:
