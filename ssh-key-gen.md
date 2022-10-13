@@ -74,7 +74,7 @@
   - Enter your password and take enter
 
 ##### A simple bash sccript to generate ssh-key:
-  ```
+```
 #!/bin/bash
 
 # Declaring a variable to store the location of the ssh keys directory
@@ -87,14 +87,16 @@ ls -la $SD
 function ssh-display {
     clear; echo "Printing your ssh keys"; sleep 2;
     echo "***************************************"
-    cat $SD/id_rsa.pub || cat $SD/id_ed25519.pub
+    cat $SD/id_rsa.pub 2> log.txt || cat $SD/id_ed25519.pub 2> log.txt
     echo "***************************************"
+    sleep 2
+    echo -e "\nThank you for trying this!"
     exit 1
 }
 
 # Creating a function to take user email
 function user-email {
-read -p "Enter Email: " email
+ read -p "Enter Email: " email
 }
 
 # Creating a function to choose ssh key type and generate ssh key
@@ -102,14 +104,14 @@ function ssh-type {
   echo "Do you want RSA(r) or ECDSA(e) keys...?"
   read -p "Enter r or e as mentioned above: " option
   if [[ "$option" == "r" ]]; then
-    $(user-email)
-    ssh-keygen -t rsa -b 4096 -C "email"
+    user-email
+    ssh-keygen -t rsa -b 4096 -C "$email"
   elif [[ "$option" == "e" ]]; then
-    $(user-email)
-    ssh-keygen -t ed25519 -C "email"
+    user-email
+    ssh-keygen -t ed25519 -C "$email"
   else 
     echo "Invalid input"
-    $(ssh-type)
+    ssh-type
   fi
 }
 
@@ -134,4 +136,8 @@ function ssh-generate {
 
 # Calling the function to generate the ssh keys
 ssh-generate
-  ```
+
+# End of Script
+sleep 2
+echo -e "\nThank you for trying this!"
+```
