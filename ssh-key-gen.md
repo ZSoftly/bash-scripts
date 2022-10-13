@@ -34,10 +34,12 @@ A simple bash sccript to generate ssh-key:
 
 # Check if the user already has ssh keys
    ls -al ~/.ssh
-
-# If the user has ssh keys, it should ask the user if to delete the current ssh keys
-# or print the public key and end the program
-
+: '
+If the user has ssh keys, it should ask the user if to delete the current ssh keys
+or print the public key and end the program
+If the user dosn't have ssh keys, request the user email address.
+Use the given email address to generate ssh keys and print the public key and stop the program.
+'
 if [[ $? -eq 0]]
 then
         read -p "Enter 1 to delete current ssh keys or 2 to print the public key : " key
