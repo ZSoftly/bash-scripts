@@ -1,13 +1,12 @@
-## BOUT THIS README
+#### ABOUT THIS README
 
 This README file contains the blueprints for all the changes made to this repository and who made the changes. 
 
 ---
-## ABOUT SSH KEYS
+##### ABOUT SSH KEYS
 ---
 * Owners: Goode & Cyprian
 * Reviewers: Ditah & Clinton
-* Dateline: Saturday, Oct 08, 2022 23:59 EST
 
 CYPRIAN:
    - I have created a file "ssh-key-gen.md" 
@@ -15,11 +14,10 @@ CYPRIAN:
    - It also contains a simplen bash script that can be run to generate ssh-keys
    
 ---
-## ABOUT PERMISSIONS
+##### ABOUT PERMISSIONS
 ---
 * Owners: Clinton
 * Reviewers: Fotso and Ditah
-* Dateline: Friday, Oct 07, 2022 23:59 EST
 
 FRU CLINTON:
    - Added two files to the bash repository.
