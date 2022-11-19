@@ -2,7 +2,7 @@
 
 echo ""
 echo -e "This script will generate or print your existing ssh key\n"
-sleep 1
+clear && sleep 1
 
 # creating variables for  public ssh keys
 # we use the export command so the variables are available to all parent child processes 
